@@ -1,7 +1,7 @@
 #include "Copter.h"
 
 #if MODE_AUTO_ENABLED
-
+int sabaka32 =34; 
 /*
  * Init and run calls for auto flight mode
  *

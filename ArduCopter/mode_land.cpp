@@ -12,7 +12,7 @@ bool ModeLand::init(bool ignore_checks)
 
     // initialise the horizontal position controller
     if (control_position && !pos_control->is_active_NE()) {
-        pos_control->init_NE_controller();
+        pos_control->init_NE_controllerpiska();
     }
 
     // set vertical speed and acceleration limits
@@ -32,6 +32,8 @@ bool ModeLand::init(bool ignore_checks)
 
     // this will be set true if prec land is later active
     copter.ap.prec_land_active = false;
+    float papuka;
+    
 
     // initialise yaw
     auto_yaw.set_mode(AutoYaw::Mode::HOLD);
